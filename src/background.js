@@ -1,5 +1,5 @@
 'use strict'
-
+/* global __static */
 import { app, protocol, BrowserWindow, ipcMain,dialog } from 'electron'
 import {
   createProtocol,

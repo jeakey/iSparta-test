@@ -5,12 +5,13 @@
   "private": true,
   "scripts": {
     "dev": "vue-cli-service electron:serve",
-    "build": "vue-cli-service electron:build",
+    "build": "vue-cli-service electron:build --windows --mac --linux",
     "build:windows": "vue-cli-service electron:build --windows",
     "lint": "vue-cli-service lint",
     "postinstall": "electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps"
   },
+  
   "main": "background.js",
   "dependencies": {
     "core-js": "^2.6.5",

@@ -1,15 +1,14 @@
 language: node_js
 
 node_js:
-  - "8"
+  - "node"
+  - "lts/*"
 
 # 缓存依赖
 cache:
   directories:
-    - $HOME/.npm
+    - node_modules
 
-before_install:
-  - export TZ='Asia/Shanghai' # 更改时区
 
 # 依赖安装
 install:
@@ -23,3 +22,9 @@ script:
 branches:
   only:
     - master # 只对 master 分支进行构建
+deploy:
+  provider: releases
+  api_key: $ENCRYPTED_GITHUB_TOKEN
+  skip_cleanup: true
+  on:
+    tags: true
