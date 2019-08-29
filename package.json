@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "vue-cli-service electron:serve",
-    "build": "vue-cli-service electron:build --windows --mac ",
+    "build": "vue-cli-service electron:build -mwl ",
     "build:windows": "vue-cli-service electron:build --windows",
     "lint": "vue-cli-service lint",
     "postinstall": "electron-builder install-app-deps",
