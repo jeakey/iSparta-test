@@ -43,9 +43,10 @@ deploy:
   api_key: 
     secure: $ENCRYPTED_GITHUB_TOKEN
   skip_cleanup: true
+  file_glob: true
   file: 
     - dist_electron/*.dmg
     - dist_electron/*.zip
     - dist_electron/*.tar.gz
   on:
-    branches: master
+    tags: true
