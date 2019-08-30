@@ -1,4 +1,9 @@
 appId: io.github.isparta
+publish: 
+  -
+    provider: github
+    owner: jeakey
+    repo: isparta-test
 win:
   target:
     - target: zip

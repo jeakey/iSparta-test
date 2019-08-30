@@ -48,5 +48,6 @@ deploy:
     - dist_electron/*.dmg
     - dist_electron/*.zip
     - dist_electron/*.tar.gz
+    - dist_electron/last*.yml
   on:
     tags: true
