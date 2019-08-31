@@ -1,12 +1,12 @@
 {
   "name": "isparta",
   "title": "iSparta",
-  "version": "3.2.0",
+  "version": "3.1.0",
   "private": true,
   "repository": "https://github.com/jeakey/isparta-test",
   "scripts": {
     "dev": "vue-cli-service electron:serve",
-    "build": "vue-cli-service electron:build -wml -p always",
+    "build": "vue-cli-service electron:build -wml",
     "build:windows": "vue-cli-service electron:build --windows",
     "lint": "vue-cli-service lint",
     "postinstall": "electron-builder install-app-deps",
